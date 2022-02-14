@@ -1,7 +1,6 @@
 # Vitor Barbosa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
-OBS.: The project does not have a record of new functional animals, as the API sent does not have an endpoint that supports POST in the application.
 
 ## Development server
 
