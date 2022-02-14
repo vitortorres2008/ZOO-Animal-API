@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   envAdress: 'https://zoo-animal-api.herokuapp.com/animals/rand/10',
   KEY_animal: "animal",
-  KEY_New_animal: "new_animal"
+  KEY_new_animal: "new_animal"
 };
 
 

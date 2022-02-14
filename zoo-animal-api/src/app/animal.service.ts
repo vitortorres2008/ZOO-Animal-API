@@ -9,11 +9,12 @@ import { Location } from '@angular/common';
 })
 export class AnimalService {
   public KEY_animal = environment.KEY_animal;
+  public KEY_new_animal = environment.KEY_new_animal;
 
   constructor(private location: Location) { }
 
-  public setAnimal(animal: AnimalModel) {
-    localStorage.setItem(this.KEY_animal, JSON.stringify(animal));
+  public setAnimal(key: string, animal: AnimalModel | AnimalModel[]) {
+    localStorage.setItem(key, JSON.stringify(animal));
   }
 
   onGoBack() {

@@ -12,11 +12,16 @@ import { AnimalModel } from '../../models/animal.model';
   styleUrls: ['./animal-list.component.css']
 })
 export class AnimalListComponent implements OnInit {
-  animalList$!: Observable<AnimalModel[]>;
+  animalList!: AnimalModel[];
+  userAnimalList!: AnimalModel[];
+  
   constructor(private animalListService: AnimalListService, private animalService: AnimalService, private router: Router) { }
 
   ngOnInit(): void {
-    this.animalList$ = this.animalListService.getData();
+    this.userAnimalList = this.animalListService.animalList;
+      this.animalListService.getData().subscribe(animal => {
+        this.animalList = [...this.userAnimalList, ...animal]
+    })
   }
 
   public sendToRoute(animal: AnimalModel) {
@@ -26,7 +31,7 @@ export class AnimalListComponent implements OnInit {
   }
 
   private sendAnimal(animal: AnimalModel) {
-    this.animalService.setAnimal(animal);
+    this.animalService.setAnimal(this.animalService.KEY_animal, animal);
   }
 
   public trackByFn = (index: number, animal: AnimalModel) => animal.id;

@@ -25,7 +25,6 @@ export class AnimalFormComponent implements OnInit {
     diet: '',
     geo_range: '',
     image_link: '',
-    id: 0
   }
 
   constructor(private animalService: AnimalService,
@@ -40,22 +39,7 @@ export class AnimalFormComponent implements OnInit {
   }
 
   addAnimal() {
-    const data = {
-      name: this.add.name,
-      latin_name: this.add.latin_name,
-      animal_type: this.add.animal_type,
-      active_time: this.add.active_time,
-      length_min: this.add.length_min,
-      length_max: this.add.length_max,
-      weight_min: this.add.weight_min,
-      weight_max: this.add.weight_max,
-      lifespan: this.add.lifespan,
-      habitat: this.add.habitat,
-      diet: this.add.diet,
-      geo_range: this.add.geo_range,
-    }
-    console.log(data)
-    this.animalListService.addData(data).subscribe(res => console.log(res));
+    this.animalListService.addData(this.add);
     this.router.navigate([''])
   }
 }
