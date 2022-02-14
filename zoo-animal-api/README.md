@@ -1,9 +1,11 @@
-# Vitor
+# Vitor Barbosa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+OBS.: The project does not have a record of new functional animals, as the API sent does not have an endpoint that supports POST in the application.
 
 ## Development server
 
+After downloading the project, run the `npm i` command in the terminal to install the packages used in the project.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
