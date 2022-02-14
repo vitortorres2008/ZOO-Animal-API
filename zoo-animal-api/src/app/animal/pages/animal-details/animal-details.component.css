@@ -1,0 +1,8 @@
+.card {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.animal-img {
+    height: 350px;
+    width: 100%;
+}

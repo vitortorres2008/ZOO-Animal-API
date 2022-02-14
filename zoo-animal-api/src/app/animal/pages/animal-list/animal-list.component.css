@@ -1,0 +1,20 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
+}
+
+.animal-img {
+  height: 300px;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.16),0 10px 10px 0 rgba(0,0,0,0.12);
+}

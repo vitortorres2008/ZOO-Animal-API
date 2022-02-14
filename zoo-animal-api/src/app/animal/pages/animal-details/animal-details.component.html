@@ -1,0 +1,24 @@
+<div class="row justify-content-center mt-3 card-details">
+    <div class="grid-container gap-2 p-2">
+        <div class="card">
+            <img src="{{animal.image_link}}" alt="img" class="animal-img">
+            <h5 class="card-title">Name: {{animal.name}}</h5>
+            <div class="card-body characteristics">
+                <p class="card-text">Latin name: {{animal.latin_name}}</p>
+                <p class="card-text">Type: {{animal.animal_type}}</p>
+                <p class="card-text">Active time: {{animal.active_time}}</p>
+                <p class="card-text">Minlenght: {{animal.length_min}}</p>
+                <p class="card-text">Maxlenght: {{animal.length_max}}</p>
+                <p class="card-text">Minweight: {{animal.weight_min}}</p>
+                <p class="card-text">Maxweight: {{animal.weight_max}}</p>
+                <p class="card-text">Life span: {{animal.lifespan}}</p>
+                <p class="card-text">Habitat: {{animal.habitat}}</p>
+                <p class="card-text">Geo range: {{animal.geo_range}}</p>
+                <p class="card-text">General diet: {{animal.diet}}</p>
+            </div>
+        </div>
+        <button class="btn btn-primary btn-lg mt-3 btn-back" (click)="onGoList()">
+            Back
+        </button>
+    </div>
+</div>

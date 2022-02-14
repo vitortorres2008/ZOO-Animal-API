@@ -1,0 +1,48 @@
+<div class="row justify-content-center mt-3 card-details">
+    <div class="grid-container gap-2 p-2">
+        <div class="card">
+            <label for="lName">Name:</label>
+            <input type="text" name="name" id="name" [(ngModel)]="add.name" class="form-control">
+            <div class="card-body characteristics">
+                <label for="lName">Latin name:</label>
+                <input type="text" name="lName" id="lName" [(ngModel)]="add.latin_name" class="form-control">
+
+                <label for="type">Type:</label>
+                <input type="text" name="animal_type" id="type" [(ngModel)]="add.animal_type" class="form-control">
+
+                <label for="acTime">Active time:</label>
+                <input type="text" name="active_time" id="acTime" [(ngModel)]="add.active_time" class="form-control">
+
+                <label for="minl">Minlenght:</label>
+                <input type="text" name="length_min" id="minl" [(ngModel)]="add.length_min" class="form-control">
+
+                <label for="maxl">Maxlenght:</label>
+                <input type="text" name="length_max" id="maxl" [(ngModel)]="add.length_max" class="form-control">
+
+                <label for="minw">Minweight:</label>
+                <input type="text" name="weight_min" id="minw" [(ngModel)]="add.weight_min" class="form-control">
+
+                <label for="maxw">Maxweight:</label>
+                <input type="text" name="weight_max" id="maxw" [(ngModel)]="add.weight_max" class="form-control">
+
+                <label for="lSpan">Life span:</label>
+                <input type="text" name="lifespan" id="lSpan" [(ngModel)]="add.lifespan" class="form-control">
+
+                <label for="habitat">Habitat:</label>
+                <input type="text" name="habitat" id="habitat" [(ngModel)]="add.habitat" class="form-control">
+
+                <label for="gRang">Geo range:</label>
+                <input type="text" name="geo_range" id="gRang" [(ngModel)]="add.geo_range" class="form-control">
+
+                <label for="gDiet">General diet:</label>
+                <input type="text" name="diet" id="gDiet" [(ngModel)]="add.diet" class="form-control">
+            </div>
+        </div>
+        <button class="btn btn-primary btn-lg mt-3 btn-back" (click)="onGoList()">
+            Cancel
+        </button>
+        <button class="btn btn-primary btn-lg mt-3" type="submit" (click)="addAnimal()">
+            Add
+        </button>
+    </div>
+</div>
